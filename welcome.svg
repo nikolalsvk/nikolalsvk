@@ -1,0 +1,262 @@
+<svg fill="none" viewBox="0 0 800 600" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      .body {
+        min-height: 100%;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: radial-gradient(#e8e677, #ff4444, #ff9b71);
+        animation: border 5s linear infinite;
+        background-size: 200% 200%;
+        background-position: 0 0;
+        border: 2.5vw solid #30261f;
+      }
+
+      .body:after {
+        content: "";
+        background: #30261f;
+        position: absolute;
+        top: 0.5vw;
+        right: 0.5vw;
+        bottom: 0.5vw;
+        left: 0.5vw;
+      }
+
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+      }
+
+      h1 {
+        font-size: 80px;
+        line-height: 63px;
+        font-weight: 800;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+      }
+      h1 a {
+        height: 100px;
+        display: block;
+        position: relative;
+      }
+      h1 a span {
+        overflow: hidden;
+        transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 1.25);
+        display: block;
+      }
+      h1 a span em {
+        display: block;
+      }
+      h1 a span:nth-child(1) {
+        color: #ff9b71;
+        height: 20px;
+        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) -1s 1;
+      }
+      h1 a span:nth-child(2) {
+        color: #ff4444;
+        top: 24px;
+        height: 17px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) -0.9s 1;
+      }
+      h1 a span:nth-child(2) em {
+        margin-top: -24px;
+      }
+      h1 a span:nth-child(3) {
+        color: #e8e677;
+        top: 45px;
+        height: 23px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) -0.8s 1;
+      }
+      h1 a span:nth-child(3) em {
+        margin-top: -45px;
+      }
+      h1 a:hover span,
+      h1 a:focus span {
+        transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2.5);
+      }
+      h1 a:hover span:nth-child(1),
+      h1 a:focus span:nth-child(1) {
+        transform: translateX(1vw);
+      }
+      h1 a:hover span:nth-child(3),
+      h1 a:focus span:nth-child(3) {
+        transform: translateX(-1vw);
+      }
+
+      ul {
+        font-size: 18px;
+        line-height: 26px;
+        color: #ff9b71;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        animation: fade 1.5s ease-out 0s;
+      }
+      ul li {
+        display: flex;
+        align-items: center;
+      }
+      ul li:nth-child(1) {
+        animation: fade 1.5s ease-out 0.1s;
+        letter-spacing: 0.125vw;
+      }
+      ul li:nth-child(1):after {
+        margin-left: 1vw;
+        width: 0.5vw;
+        height: 0.5vw;
+        border-radius: 50%;
+        background-color: #ff9b71;
+      }
+      ul li:nth-child(1) a {
+        margin-left: 0.5vw;
+      }
+      ul li:nth-child(1) a:hover,
+      ul li:nth-child(1) a:focus {
+        color: #ff4444;
+      }
+      ul li:nth-child(2) {
+        animation: fade 1.5s ease-out 0.2s;
+      }
+      ul li:nth-child(3) a {
+        animation: fade 1.5s ease-out 0.3s;
+      }
+      ul li:nth-child(4) a {
+        animation: hi 3s linear -0.5s 1;
+      }
+      ul li a {
+        color: #fef29e;
+      }
+      ul li:not(:first-child) {
+        margin-left: 1vw;
+      }
+      ul li:not(:first-child) a {
+        transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2);
+        font-style: normal;
+      }
+      ul li a {
+        color: #fef29e;
+      }
+      ul li:not(:first-child) a:hover,
+      ul li:not(:first-child) a:focus {
+        transform: scale(1.25) rotate(9deg);
+      }
+
+      @keyframes intro {
+        0%,
+        75% {
+          transform: translateX(-100vw);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fade {
+        0%,
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes border {
+        0% {
+          background-position: 0 0;
+        }
+
+        20% {
+          background-position: 100% 0;
+        }
+
+        40% {
+          background-position: 100% 100%;
+        }
+
+        60% {
+          background-position: 0 100%;
+        }
+
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      @keyframes hi {
+        0%,
+        80% {
+          transform: rotate(0deg) translate(0, 0);
+        }
+        85% {
+          transform: rotate(15deg) translate(0.33333vw, -0.25vw);
+        }
+        90% {
+          transform: rotate(0deg) translate(0, 0);
+        }
+        95% {
+          transform: rotate(15deg) translate(0.33333vw, -0.25vw);
+        }
+        100% {
+          transform: rotate(0deg) translate(0, 0);
+        }
+      }
+    </style>
+    <div class='body'>
+      <div class='container'>
+        <h1>
+          <a href="https://github.com/nikolalsvk">
+            <span><em>nikola đuza</em></span>
+            <span><em>nikola đuza</em></span>
+            <span><em>nikola đuza</em></span>
+          </a>
+        </h1>
+        <ul>
+          <li>Software Engineer at <a href="https://www.toptal.com/resume/nikola-duza#utilize-just-top-notch-software-coders">Toptal</a></li>
+        </ul>
+        <ul>
+          <li>Organizer at <a href="https://novisadjs.org">Novi Sad JS</a></li>
+        </ul>
+        <ul>
+          <li>Writer at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li><a href="mailto:nikolaseap@gmail.com" role="button">👋</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </foreignObject>
+</svg>
