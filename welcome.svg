@@ -2,16 +2,6 @@
   <foreignObject width="100%" height="100%">
   <div xmlns="http://www.w3.org/1999/xhtml">
     <style>
-      @media (prefers-color-scheme: light) {
-        .body {
-          border: 2.5vw solid #ffffff;
-        }
-
-        .body:after {
-          background: #ffffff;
-        }
-      }
-
       * {
         margin: 0;
         padding: 0;
@@ -37,12 +27,12 @@
         animation: border 5s linear infinite;
         background-size: 200% 200%;
         background-position: 0 0;
-        border: 2.5vw solid #30261f;
+        border: 24px solid #0d1117;
       }
 
       .body:after {
         content: "";
-        background: #30261f;
+        background: #0d1117;
         position: absolute;
         top: 0.5vw;
         right: 0.5vw;
@@ -172,9 +162,6 @@
         transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2);
         font-style: normal;
       }
-      ul li a {
-        color: #fef29e;
-      }
       ul li:not(:first-child) a:hover,
       ul li:not(:first-child) a:focus {
         transform: scale(1.25) rotate(9deg);
@@ -238,6 +225,25 @@
         }
         100% {
           transform: rotate(0deg) translate(0, 0);
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        .body {
+          border-color: #ffffff;
+          background-image: radial-gradient(#ffdf00, #ff4444, #ff9b71);
+        }
+
+        .body:after {
+          background: #ffffff;
+        }
+
+        ul li a {
+          color: #ffdf00;
+        }
+
+        h1 a span:nth-child(3) {
+          color: #ffdf00;
         }
       }
     </style>
