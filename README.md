@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="welcome.svg" width="800" height="600" alt="Click to see the source">
-</div>
+![Welcome to nikolalsvk's GitHub profile README](welcome.svg)
 
 <!--
 **nikolalsvk/nikolalsvk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
