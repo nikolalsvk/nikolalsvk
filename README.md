@@ -1,5 +1,7 @@
 ![Welcome to nikolalsvk's GitHub profile README](welcome.svg)
 
+![Another one](hello-animated.svg)
+
 <!--
 **nikolalsvk/nikolalsvk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
