@@ -183,57 +183,6 @@ position: fixed;
         transform: scale(1.25) rotate(9deg);
       }
 
-      @keyframes intro {
-        0%,
-        75% {
-          transform: translateX(-100vw);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes fade {
-        0%,
-        75% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes border {
-        0% { background-position: 0 0; }
-
-        20% { background-position: 100% 0; }
-
-        40% { background-position: 100% 100%; }
-
-        60% { background-position: 0 100%; }
-
-        100% { background-position: 0 0; }
-      }
-
-      @keyframes hi {
-        0%,
-        80% {
-          transform: rotate(0deg) translate(0, 0);
-        }
-        85% {
-          transform: rotate(15deg) translate(0.33333vw, -0.25vw);
-        }
-        90% {
-          transform: rotate(0deg) translate(0, 0);
-        }
-        95% {
-          transform: rotate(15deg) translate(0.33333vw, -0.25vw);
-        }
-        100% {
-          transform: rotate(0deg) translate(0, 0);
-        }
-      }
-
       @media (prefers-color-scheme: light) {
         .body {
           --color-main: #9B5DE5;
