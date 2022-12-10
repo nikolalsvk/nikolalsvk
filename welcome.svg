@@ -2,7 +2,7 @@
   <foreignObject width="100%" height="100%">
   <div xmlns="http://www.w3.org/1999/xhtml">
     <style>
-      * {
+      .body {
         margin: 0;
         padding: 0;
         color: inherit;
@@ -10,9 +10,7 @@
         list-style: none;
         outline: none;
         box-sizing: border-box;
-      }
 
-      .body {
         --color-main: #ff9b71;
         --color-primary: #ff4444;
         --color-secondary: #e8e677;
