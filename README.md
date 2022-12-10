@@ -1,5 +1,5 @@
-<div style="width: 100%;">
-  <img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
+<div align="center">
+  <img src="welcome.svg" width="800" height="600" alt="Click to see the source">
 </div>
 
 <!--
