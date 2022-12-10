@@ -2,7 +2,7 @@
   <foreignObject width="100%" height="100%">
   <div xmlns="http://www.w3.org/1999/xhtml">
     <style>
-      * {
+      .body {
         margin: 0;
         padding: 0;
         color: inherit;
@@ -10,9 +10,7 @@
         list-style: none;
         outline: none;
         box-sizing: border-box;
-      }
 
-      .body {
         --color-main: #ff9b71;
         --color-primary: #ff4444;
         --color-secondary: #e8e677;
@@ -20,13 +18,12 @@
         --color-link: #fef29e;
         --color-link-active: #ff4444;
 
-        width: 100%;
         height: 600px;
         text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: fixed;
+position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -38,6 +35,16 @@
         background-position: 0 0;
         border: 24px solid;
         border-color: var(--color-background);
+      }
+
+      .body:after {
+        content: "";
+        background: var(--color-background);
+        position: absolute;
+        top: 0.5vw;
+        right: 0.5vw;
+        bottom: 0.5vw;
+        left: 0.5vw;
       }
 
       .container {
@@ -111,6 +118,14 @@
       }
 
       ul {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+        box-sizing: border-box;
+
         font-size: 18px;
         line-height: 26px;
         color: var(--color-main);
@@ -154,6 +169,7 @@
       }
       ul li a {
         color: var(--color-link);
+        text-decoration: none;
       }
       ul li:not(:first-child) {
         margin-left: 1vw;
@@ -188,25 +204,15 @@
       }
 
       @keyframes border {
-        0% {
-          background-position: 0 0;
-        }
+        0% { background-position: 0 0; }
 
-        20% {
-          background-position: 100% 0;
-        }
+        20% { background-position: 100% 0; }
 
-        40% {
-          background-position: 100% 100%;
-        }
+        40% { background-position: 100% 100%; }
 
-        60% {
-          background-position: 0 100%;
-        }
+        60% { background-position: 0 100%; }
 
-        100% {
-          background-position: 0 0;
-        }
+        100% { background-position: 0 0; }
       }
 
       @keyframes hi {
