@@ -45,14 +45,6 @@
         left: 0.5vw;
       }
 
-      .container {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 10;
-      }
-
       @media (prefers-color-scheme: light) {
         .body {
           --color-main: #9B5DE5;
