@@ -1,10 +1,8 @@
 <div style="width: 100%;">
-  <img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
+  <a href="https://github.com/nikolalsvk/nikolalsvk/blame/main/welcome.svg">
+    <img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
+  </a>
 </div>
-
-![Welcome to nikolalsvk's GitHub profile README](welcome.svg)
-
-![Another one](hello-animated.svg)
 
 <!--
 **nikolalsvk/nikolalsvk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

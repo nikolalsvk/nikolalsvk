@@ -65,6 +65,7 @@
       h1 a span:nth-child(1) {
         color: var(--color-main);
         margin-bottom: 4px;
+        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) -1s 1;
       }
       h1 a span:nth-child(1) em {
         margin-top: 20px;
@@ -74,6 +75,7 @@
       h1 a span:nth-child(2) {
         color: var(--color-primary);
         margin-bottom: 4px;
+        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) -0.9s 1;
       }
       h1 a span:nth-child(2) em {
         margin-top: -6px;
@@ -81,6 +83,7 @@
       }
       h1 a span:nth-child(3) {
         color: var(--color-secondary);
+        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) -0.8s 1;
       }
       h1 a span:nth-child(3) em {
         margin-top: -34px;
@@ -116,9 +119,8 @@
       }
       ul li {
         display: flex;
-      }
-      ul li {
         letter-spacing: 0.125vw;
+        animation: fade 1.5s ease-out 0.2s;
       }
       ul li a {
         margin-left: 0.5vw;
@@ -132,6 +134,7 @@
       }
 
       .hi {
+        display: inline-block;
         transform-origin: 70% 70%;
         animation: hi 3s linear -2s infinite;
       }
@@ -145,12 +148,26 @@
       }
 
       @keyframes hi {
-        0%,
+        25% { transform: rotate(0deg); }
+        30% { transform: rotate(15deg); }
+        35% { transform: rotate(0deg); }
+        40% { transform: rotate(15deg); }
+        45% { transform: rotate(0deg); }
         80% { transform: rotate(0deg); }
         85% { transform: rotate(15deg); }
         90% { transform: rotate(0deg); }
         95% { transform: rotate(15deg); }
         100% { transform: rotate(0deg); }
+      }
+
+      @keyframes intro {
+        0%, 75% { transform: translateX(-100vw); }
+        100% { transform: translateX(0); }
+      }
+
+      @keyframes fade {
+        0%, 75% { opacity: 0; }
+        100% { opacity: 1; }
       }
 
       @media (prefers-color-scheme: light) {
@@ -161,6 +178,26 @@
           --color-background: #ffffff;
           --color-link: #00BBF9;
           --color-link-active: #F15BB5;
+        }
+      }
+
+      @media (prefers-reduced-motion) {
+        .body {
+          animation: none;
+        }
+
+        .hi {
+          animation: none;
+        }
+
+        ul li {
+          animation: none;
+        }
+
+        h1 a span:nth-child(1),
+        h1 a span:nth-child(2),
+        h1 a span:nth-child(3) {
+          animation: none;
         }
       }
     </style>
@@ -184,7 +221,7 @@
           <li>Organizer at <a href="https://novisadjs.org">Novi Sad JS</a></li>
         </ul>
         <ul>
-          <li class='hi'><a href="mailto:nikolaseap@gmail.com" role="button">👋</a></li>
+          <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
         </ul>
         </section>
       </div>
