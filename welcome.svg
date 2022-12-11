@@ -105,7 +105,6 @@
       .items {
         margin-top: 24px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -120,8 +119,6 @@
       ul li {
         display: flex;
         letter-spacing: 0.125vw;
-        opacity: 0;
-        animation: fade 1.5s ease-out 0.2s forwards;
       }
       ul li a {
         margin-left: 0.5vw;
