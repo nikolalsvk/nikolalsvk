@@ -120,7 +120,8 @@
       ul li {
         display: flex;
         letter-spacing: 0.125vw;
-        animation: fade 1.5s ease-out 0.2s;
+        opacity: 0;
+        animation: fade 1.5s ease-out 0.2s forwards;
       }
       ul li a {
         margin-left: 0.5vw;
@@ -191,6 +192,7 @@
         }
 
         ul li {
+          opacity: 1;
           animation: none;
         }
 
