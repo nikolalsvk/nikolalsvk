@@ -103,7 +103,7 @@
       }
 
       .items {
-        margin-top: 20px;
+        margin-top: 24px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -205,28 +205,30 @@
     </style>
     <div class='body'>
       <div class='container'>
-        <h1>
-          <a href="https://github.com/nikolalsvk">
-            <span><em>nikola đuza</em></span>
-            <span><em>nikola đuza</em></span>
-            <span><em>nikola đuza</em></span>
-          </a>
+        <div>
+          <h1>
+            <a href="https://github.com/nikolalsvk">
+              <span><em>nikola đuza</em></span>
+              <span><em>nikola đuza</em></span>
+              <span><em>nikola đuza</em></span>
+            </a>
+          </h1>
 
-          <section class='items'>
-            <ul>
-              <li>Writer at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
-            </ul>
-            <ul>
-              <li>Software Engineer at <a href="https://www.toptal.com/resume/nikola-duza#utilize-just-top-notch-software-coders">Toptal</a></li>
-            </ul>
-            <ul>
-              <li>Organizer at <a href="https://novisadjs.org">Novi Sad JS</a></li>
-            </ul>
-            <ul>
-              <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
-            </ul>
-          </section>
-        </h1>
+        <section class='items'>
+          <ul>
+            <li>Writer at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
+          </ul>
+          <ul>
+            <li>Software Engineer at <a href="https://www.toptal.com/resume/nikola-duza#utilize-just-top-notch-software-coders">Toptal</a></li>
+          </ul>
+          <ul>
+            <li>Organizer at <a href="https://novisadjs.org">Novi Sad JS</a></li>
+          </ul>
+          <ul>
+            <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
+          </ul>
+        </section>
+        </div>
       </div>
     </div>
   </div>
