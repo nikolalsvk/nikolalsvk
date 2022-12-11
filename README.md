@@ -1,3 +1,7 @@
+<div style="width: 100%;">
+  <img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
+</div>
+
 ![Welcome to nikolalsvk's GitHub profile README](welcome.svg)
 
 ![Another one](hello-animated.svg)
