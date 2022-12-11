@@ -121,7 +121,7 @@
         letter-spacing: 0.125vw;
       }
       ul li a {
-        margin-left: 0.5vw;
+        margin-left: 5px;
       }
       ul li a:hover,
       ul li a:focus {
