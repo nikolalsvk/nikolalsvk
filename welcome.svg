@@ -45,6 +45,13 @@
         align-items: center;
       }
 
+      .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
       h1 {
         font-size: 4rem;
         font-weight: 800;
@@ -205,7 +212,7 @@
     </style>
     <div class='body'>
       <div class='container'>
-        <div>
+        <div class='flex'>
           <h1>
             <a href="https://github.com/nikolalsvk">
               <span><em>nikola đuza</em></span>
