@@ -45,13 +45,6 @@
         align-items: center;
       }
 
-      .flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-      }
-
       h1 {
         font-size: 4rem;
         font-weight: 800;
@@ -114,7 +107,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         flex-direction: column;
       }
       ul {
@@ -212,15 +205,13 @@
     </style>
     <div class='body'>
       <div class='container'>
-        <div class='flex'>
-          <h1>
-            <a href="https://github.com/nikolalsvk">
-              <span><em>nikola đuza</em></span>
-              <span><em>nikola đuza</em></span>
-              <span><em>nikola đuza</em></span>
-            </a>
-          </h1>
-
+        <h1>
+          <a href="https://github.com/nikolalsvk">
+            <span><em>nikola đuza</em></span>
+            <span><em>nikola đuza</em></span>
+            <span><em>nikola đuza</em></span>
+          </a>
+        </h1>
         <section class='items'>
           <ul>
             <li>Writer at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
@@ -235,7 +226,6 @@
             <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
           </ul>
         </section>
-        </div>
       </div>
     </div>
   </div>
