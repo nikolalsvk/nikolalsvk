@@ -211,13 +211,10 @@
         </h1>
         <section class='items'>
           <ul>
-            <li>Writer at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
+            <li>Writer &#38; Software Engineer</li>
           </ul>
           <ul>
-            <li>Software Engineer at <a href="https://www.toptal.com/resume/nikola-duza#utilize-just-top-notch-software-coders">Toptal</a></li>
-          </ul>
-          <ul>
-            <li>Organizer at <a href="https://novisadjs.org">Novi Sad JS</a></li>
+            <li>at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
           </ul>
           <ul>
             <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
